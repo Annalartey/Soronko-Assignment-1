@@ -4,13 +4,15 @@ import Trending from './Trending';
 import Ent from './Ent' ;
 import Sports from './Sports';
 
-function AllPosts() {
+
+
+function AllPosts(){
     return (
         <div className="h-full">
             <Trending/>
-            <Ent/>
+             <Ent/>
             <Business/>
-            <Sports/>
+            <Sports/> 
         </div>
     )
 }

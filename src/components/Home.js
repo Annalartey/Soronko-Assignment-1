@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AllPosts from './AllPosts';
 import NewPosts from './NewPosts';
 //import Menu from './Menu';
@@ -6,7 +6,6 @@ import Sponsors from './Sponsors';
 import Contact from './Contact';
 import Posted from './Posted';
 import Navbar from './Navbar'
-//import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 //import AddPage from './AddPage';
 
 
@@ -19,7 +18,7 @@ function Home() {
             </div> 
            <div>
                <NewPosts/>
-               <Posted/>
+                <Posted />
                 <AllPosts/>
            </div>
            <div>

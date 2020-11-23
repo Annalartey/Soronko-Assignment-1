@@ -20,7 +20,6 @@ function App() {
   function handleLogin(event) {
     event.preventDefault();
     if (email === "anna.t.lartey@gmail.com" && password === "anatiola") {
-      alert("You are logged in successfully")
       setLoggedIn(true)
     }
   }

@@ -8,7 +8,7 @@ import Sponsors from './Sponsors';
 
 function AddPage(){
     return(
-        <div className="body">
+        <div className="flex">
             <Menu/>
             <Add/>
             <div>
