@@ -59,34 +59,35 @@ function Add() {
 
 
         return (
-            <div className="w-full bg-white shadow-md rounded px-5 py-8 pt-8">
-                <form>
-                    <label className="text-sm block font-bold  pb-2">Title:</label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="text" name='title' value={title} onChange={handleTitleInput} />
+            <div className="max-w-xl rounded px-5 py-8 pt-8">
+                
+                <form className="-mt-96 ml-20">
+                    <label className="text-2xl text-white block font-bold pb-2">TITLE:</label>
+                    <input className="mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="text" name='title' value={title} onChange={handleTitleInput} />
                     <br></br>
-                    <label className="text-sm block font-bold  pb-2">Content:</label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="text" name='content' value={content} onChange={handleContentInput} />
+                    <label className="text-2xl text-white block font-bold  pb-2">AUTHOR:</label>
+                    <input className="mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="text" name='content' value={content} onChange={handleContentInput} />
                     <br></br>
-                    <label className="text-sm block font-bold  pb-2">Author:</label>
-                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="text" name='authourname' value={author} onChange={handleAuthorInput} />
+                    <label className="text-2xl text-white block font-bold  pb-2">CONTENT:</label>
+                    <input className="mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="text" name='authourname' value={author} onChange={handleAuthorInput} />
                      <br></br>
-                    <label className="text-sm block font-bold  pb-2">Date:</label>
+                    <label className="text-2xl text-white block font-bold  pb-2">DATE:</label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" type="date" name='date' value={date} onChange={handleDateInput} />
                     <br></br>
                     <label>
-                        <button type="button" name="button" onClick={handlePost}>Post</button>
+                        <center><button className="rounded border-2 border-white text-white px-4 mt-4 " type="button" name="button" onClick={handlePost}>Post</button></center>
                     </label>
                 </form>
-                <h1>All Posts</h1>
-                <ul>
+                <center><h1 className="font-bold text-black text-4xl mt-80 ml-96">All Posts</h1></center>
+                <ul className="ml-40 max-w-xl">
                 {
                     post.map((post) => (
                         <li key={post.id}>
-                            {post.title}
+                            <h1 className="font-bold text-2xl">{post.title}</h1>
                             <br></br>
-                            {post.author}
+                            <h1 className="font-bold text-xl"> By {post.author}</h1>
                             <br></br>
-                            {post.content}
+                             {post.content}
                             <br></br>
                             {post.date}
                         </li>
@@ -94,7 +95,7 @@ function Add() {
                     )
                 }
                 </ul>
-                
+            
             </div>
         );
     }

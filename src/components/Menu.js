@@ -3,25 +3,29 @@ import {Link} from 'react-router-dom';
 
 function Menu() {
     return (
-        <div className="mt-16">
+        <div className="-mt-24 px-4 ml-40 py-4">
+            
         <ul>
-            <Link to="/trending"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-10 mt-2 rounded focus:outline-none focus:shadow-outline">Trending</button> </Link>
-            <br></br>
-            <Link to="/business"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-10 mt-10 rounded focus:outline-none focus:shadow-outline">Business</button> </Link>
-            <br></br>
-            <Link to="/entertainment"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-5 mt-10 rounded focus:outline-none focus:shadow-outline">Entertainment</button> </Link>
-            <br></br>
-            <Link to="/sports"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-12 mt-10 rounded focus:outline-none focus:shadow-outline">Sports</button> </Link>
-            <br></br>
-            <Link to="/music"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-12 mt-10 rounded focus:outline-none focus:shadow-outline">Music</button> </Link>
-             <br></br>
-            <Link to="/videos"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-12 mt-10 rounded focus:outline-none focus:shadow-outline">Videos</button> </Link>
-            <br></br>
-            <Link to="/movies"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-11 mt-10 rounded focus:outline-none focus:shadow-outline">Movies</button> </Link>
-            <br></br>
-            <Link to="/events"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-12 mt-10 rounded focus:outline-none focus:shadow-outline">Events</button> </Link>
-            <br></br>
-            <Link to="/addpage"><button className="bg-white border-2 border-gray-200 hover:bg-blue-700 text-black font-bold py-2 px-12 mt-10 rounded focus:outline-none focus:shadow-outline" >Add Blog Post</button> </Link>
+            <Link to="/"><button className="font-bold mr-4 hover:text-blue-400">Home</button> </Link>
+            <Link to="/trending"><button className="font-bold mr-4 hover:text-blue-400">Trending</button> </Link>
+       
+            <Link to="/business"><button className="font-bold mr-4 hover:text-blue-400">Business</button> </Link>
+      
+            <Link to="/entertainment"><button className="font-bold mr-4 hover:text-blue-400">Entertainment</button> </Link>
+     
+            <Link to="/sports"><button className="font-bold mr-4 hover:text-blue-400">Sports</button> </Link>
+     
+            <Link to="/music"><button className="font-bold mr-4 hover:text-blue-400">Music</button> </Link>
+    
+            <Link to="/videos"><button className="font-bold mr-4 hover:text-blue-400">Videos</button> </Link>
+     
+            <Link to="/movies"><button className="font-bold mr-4 hover:text-blue-400">Movies</button> </Link>
+        
+            <Link to="/events"><button className="font-bold mr-4 hover:text-blue-400">Events</button> </Link>
+           
+            <Link to="/login"><button className="font-bold mr-4 hover:text-blue-400">Login</button> </Link>
+            <Link to="/signup"><button className="font-bold mr-4 hover:text-blue-400">Signup</button> </Link>
+            <Link to="/addpage"><button className="font-bold mr-4 hover:text-blue-400" >Add Blog Post</button> </Link>
         </ul>
         </div>
     )

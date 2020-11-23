@@ -1,29 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AllPosts from './AllPosts';
 import NewPosts from './NewPosts';
-//import Menu from './Menu';
-import Sponsors from './Sponsors';
-import Contact from './Contact';
-import Posted from './Posted';
-import Navbar from './Navbar'
-//import AddPage from './AddPage';
+
 
 
 
 function Home() {
     return (
-        <div className="lg: flex">
-            <div>
-              <Navbar/>
-            </div> 
+        <div className=" bg-gray-100 py-2">
            <div>
                <NewPosts/>
-                <Posted />
                 <AllPosts/>
-           </div>
-           <div>
-               <Sponsors/>
-               <Contact/>
            </div>
         </div>
     )

@@ -1,20 +1,21 @@
 import React from 'react';
-import Menu from './Menu';
 import Add from './Add';
-import Contact from './Contact';
-import Sponsors from './Sponsors';
+import add from './add.jpg'
+import AllPosts from './AllPosts';
 
 
 
 function AddPage(){
     return(
-        <div className="flex">
-            <Menu/>
-            <Add/>
-            <div>
-                <Contact/>
-                <Sponsors/>
+        <div className="">
+            {<img className="" src={add} alt="add" />} 
+            <div className="-mt-96">
+                <Add/>
+                <AllPosts/>
             </div>
+            
+            
+             
         </div>
     )
     
