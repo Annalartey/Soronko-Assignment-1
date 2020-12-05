@@ -78,16 +78,16 @@ function Add() {
                         <center><button className="rounded border-2 border-white text-white px-4 mt-4 " type="button" name="button" onClick={handlePost}>Post</button></center>
                     </label>
                 </form>
-                <center><h1 className="font-bold text-black text-4xl mt-80 ml-96">All Posts</h1></center>
-                <ul className="ml-40 max-w-xl">
+                <center><h1 className="font-bold text-black text-4xl mt-80 mb-10">All Posts</h1></center>
+                <ul className="ml-32 w-full mt-4">
                 {
                     post.map((post) => (
-                        <li key={post.id}>
+                        <li className="bg-white border-2 m-4 py-6 border-gray-900 w-full" key={post.id}>
                             <h1 className="font-bold text-2xl">{post.title}</h1>
                             <br></br>
-                            <h1 className="font-bold text-xl"> By {post.author}</h1>
+                            <h3 className="font-bold text-xl"> By {post.content}</h3>
                             <br></br>
-                             {post.content}
+                             <p>{post.author}</p>
                             <br></br>
                             {post.date}
                         </li>

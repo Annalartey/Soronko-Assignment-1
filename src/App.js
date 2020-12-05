@@ -6,13 +6,10 @@ import Home from './components/Home';
 import LoginForm from './components/LoginForm';
 import Signup from './components/Signup';
 import Menu from './components/Menu';
-import Trending from './components/Trending';
-import Business from './components/Business';
-import Ent from './components/Ent';
-import Sports from './components/Sports';
-import Music from './components/Music';
-import Videos from './components/Videos';
-import Movies from './components/Movies';
+import TrendingPage from './components/TrendingPage';
+import BusinessPage from './components/BusinessPage';
+import EntPage from './components/EntPage';
+import SportsPage from './components/SportsPage';
 import Events from './components/Events';
 import Head from './components/Head';
 
@@ -34,13 +31,10 @@ function App(){
                     <Route path="/login" component={LoginForm} />
                     <Route path="/signup" component={Signup} />
                     <Route path="/addpage" component={AddPage} />
-                    <Route path="/trending" component={Trending} />
-                    <Route path="/business" component={Business} />
-                    <Route path="/entertainment" component={Ent} />
-                    <Route path="/sports" component={Sports} />
-                    <Route path="/music" component={Music} />
-                    <Route path="/videos" component={Videos} />
-                    <Route path="/movies" component={Movies} />
+                    <Route path="/trending" component={TrendingPage} />
+                    <Route path="/business" component={BusinessPage} />
+                    <Route path="/entertainment" component={EntPage} />
+                    <Route path="/sports" component={SportsPage} />
                     <Route path="/events" component={Events} />
                 </Switch>
             </Router>

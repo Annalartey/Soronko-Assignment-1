@@ -7,7 +7,7 @@ import NewPosts from './NewPosts';
 
 function Home() {
     return (
-        <div className=" bg-gray-100 py-2">
+        <div className=" py-2">
            <div>
                <NewPosts/>
                 <AllPosts/>

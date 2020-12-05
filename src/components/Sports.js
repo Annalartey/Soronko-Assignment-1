@@ -1,10 +1,10 @@
 import React from 'react';
 import LikeDislike from './LikeDislike';
-import VeiwButton from './VeiwButton';
+import {Link} from 'react-router-dom';
 
 function Sports() {
     return (
-        <div className="bg-white border-2 m-4 py-6 border-gray-900">
+        <div className="bg-white border-2 m-4 py-6 px-4 border-gray-900">
             <h1 className="font-bold text-xl">Sports & Games</h1>
             <hr></hr>
             <br></br>
@@ -16,7 +16,7 @@ function Sports() {
 Nulla tempor laborum ex amet sint dolore duis dolor adipisicing Lorem id labore. Nostrud est occaecat ad dolore excepteur est voluptate ut duis. Voluptate minim nostrud amet ipsum laboris ex officia veniam exercitation amet pariatur cillum. Cillum voluptate enim do consectetur.</p>
             
             <br></br>
-            <VeiwButton/>
+            <Link to="/sports"><button className="rounded bg-gray-300 hover:bg-gray-500 hover:text-white font-bold px-2 ml-8">Read More</button> </Link>
             <br></br>
             <LikeDislike/>
         </div>

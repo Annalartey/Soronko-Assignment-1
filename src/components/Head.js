@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from './logo.png'
+import logo1 from './logo1.png'
 
 function Head() {
     return (
-        <div  className="flex h-80">
+        <div  className="flex h-80 bg-gray-100">
             <div className="ml-40 h-42 w-42 -mt-6">
-            {<img src={logo} alt="logo"/>}
+            {<img src={logo1} alt="logo"/>}
             </div>
             <div className="ml-80 mt-40" >
             <input className="border px-2 text-gray-700 border-blue-300 h-10" type="text" name='search' placeholder="search" />

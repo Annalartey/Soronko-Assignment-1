@@ -1,11 +1,11 @@
 import React from 'react';
 import LikeDislike from './LikeDislike';
-import VeiwButton from './VeiwButton';
+import {Link} from 'react-router-dom';
 
 
 function Ent() {
     return (
-        <div className="bg-white border-2 m-4 py-6 border-gray-900">
+        <div className="bg-white border-2 m-4 py-6 px-4 border-gray-900">
             <h1 className="font-bold text-xl">Entertainment Filla</h1>
             <hr></hr>
             <br></br>
@@ -18,7 +18,7 @@ function Ent() {
 
            
             <br></br>
-            <VeiwButton/>
+            <Link to="/entertainment"><button className="rounded bg-gray-300 hover:bg-gray-500 hover:text-white font-bold px-2 ml-8">Read More</button> </Link>
             <br></br>
             <LikeDislike/>
         </div>

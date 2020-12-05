@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import AddPage from './AddPage';
-import Posted from './Posted'
 import AllPosts from './AllPosts';
 
 
@@ -47,7 +46,6 @@ function App() {
             <button className="bg-white px-2 ml-96 rounded border-2 border-red-600 hover:bg-red-600 hover:text-white" onClick={handleLogout}>Log out</button>
             </div>
             <AddPage/>
-            <Posted/>
             <AllPosts/>
            
           </>
